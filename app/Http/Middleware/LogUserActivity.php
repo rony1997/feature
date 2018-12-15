@@ -15,7 +15,8 @@ class LogUserActivity
      * Handle an incoming request.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
+     * @param  \Closu
+     * re  $next
      * @return mixed
      */
     public function handle($request, Closure $next)
