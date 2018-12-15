@@ -27,3 +27,7 @@ Route::prefix('admin')->group(function(){
     Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
