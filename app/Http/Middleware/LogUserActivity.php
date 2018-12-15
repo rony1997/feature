@@ -23,7 +23,7 @@ class LogUserActivity
         if(Auth::check()){
             $expiresAt = Carbon::now()->addSeconds(5);
             Cache::put('user-online-'.Auth::user()->id, true, $expiresAt);
-           }
+        }
         return $next($request);
     }
 }
